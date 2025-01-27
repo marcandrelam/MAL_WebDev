@@ -1,2 +1,3 @@
 # MAL_WebDev
-Web Dev 2025 
+
+Web Dev 2025
