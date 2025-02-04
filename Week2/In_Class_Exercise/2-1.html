@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <h1>HTML Form Elements</h1>
+
+    <!-- Form using basic input types -->
+    <!-- For more on form elements see w3 school -->
+
+    <p>
+      form contains files or links to process the form fields after the user
+      hits submit
+    </p>
+
+    <p>
+      main form attribute to worry about is the method.
+      <a
+        href="https://www.w3schools.com/tags/att_form_method.asp"
+        target="_blank"
+      >
+        w3
+      </a>
+    </p>
+    <form
+      action="create_profile.js"
+      name="user_create"
+      target="_self"
+      method="POST"
+    ></form>
+
+    <fieldset>
+      <legend>Simple Text Input</legend>
+      <p>basic text input, changed by the value of the type attribute</p>
+      <label for="first_name"> First Name </label>
+      <input type="text" name="first_name" maxlength="10" />
+      <br />
+      <br />
+      <label for="last_name"> Last Name </label>
+      <input type="text" name="last_name" maxlength="10" />
+    </fieldset>
+
+    <fieldset>
+      <legend>text area</legend>
+      <label for="why_class">Why class?</label>
+      <textarea name="why_class" cols="50" rows="5" required></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>Dropdown Select Option</legend>
+      <select name="state"></select>
+      <label for="state" Pick a State>
+        <option value="NY" New York></option>
+        <option value="NJ" New Jersey></option>
+        <option value="NM" New Mexico></option>
+      </select>
+      </label>
+    </fieldset>
+  </body>
+</html>
