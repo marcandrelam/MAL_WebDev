@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box; 
+}
+
+@font-face{
+    font-family: 'HyliaSerif';
+    src:url(HyliaSerifBeta-Regular.otf);
+}
+
+body{
+    margin:0; 
+    font-family: 'Helvetica'; 
+    background-color: antiquewhite;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+header{
+    display:flex; 
+    font-family: 'HyliaSerif', Helvetica, sans-serif;
+    flex-direction:row; 
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 2rem; 
+    position: relative; 
+}
+
+.menu{
+   list-style-type: none; 
+   font-size: 25px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+}
+
+.menu li a{
+    color: #137c55;
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    font-family: 'HyliaSerif', Helvetica, sans-serif;
+    font-size: 64px;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: rgba(19, 124, 85, 0.5);
+    overflow: hidden;
+}
+
+.hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh%;
+    object-fit: cover; /* Ensures it covers the space while keeping aspect ratio */
+    z-index: -1;
+}
+
+.hero-paragraph{
+    display: flex;
+    justify-content: space-between;
+    font-family: Helvetica, sans-serif;
+    color:#137c55;
+    padding: 5rem;
+}
+
+.home-options{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 5rem;
+}
+
+.home-menu{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
