@@ -7,15 +7,34 @@
     src:url(HyliaSerifBeta-Regular.otf);
 }
 
+@font-face{
+    font-family: 'CormorantGaramond';
+    src:url(CormorantGaramond.ttf);
+}
+
 body{
     margin:0; 
     font-family: 'Helvetica'; 
     background-color: antiquewhite;
 }
 
-img{
-    width: 100%;
-    height: auto;
+body a{
+    text-decoration: none;
+    color: black;
+}
+
+h1{
+    font-size: 64px; 
+    font-family: 'HyliaSerif', Helvetica, sans-serif;
+}
+h2{
+    font-size: 32px; 
+    font-family: "CormorantGaramond", sans-serif;
+}
+
+p{
+    font-size: 24px; 
+    font-family: "CormorantGaramond", sans-serif;
 }
 
 header{
@@ -48,44 +67,94 @@ header{
     font-family: 'HyliaSerif', Helvetica, sans-serif;
     font-size: 64px;
     width: 100%;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
-    background-color: rgba(19, 124, 85, 0.5);
+    background-color: rgba(0, 67, 43, 0.3);
     overflow: hidden;
 }
 
 .hero img {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh%;
-    object-fit: cover; /* Ensures it covers the space while keeping aspect ratio */
+    width: 100%; 
     z-index: -1;
 }
 
 .hero-paragraph{
     display: flex;
     justify-content: space-between;
+    text-align: center;
     font-family: Helvetica, sans-serif;
     color:#137c55;
-    padding: 5rem;
+    padding: 20px;
 }
 
-.home-options{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-    padding: 5rem;
+.section-header{
+    text-align: center;
+    padding: 20px;
 }
 
-.home-menu{
-    list-style-type: none;
+.destination-container{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.destination-item{
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.destination-item img{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    border-radius: 30px;
+}
+
+.destination-item a{
+    text-decoration: none;
+}
+
+.destination-overlay{
+    text-decoration: none;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: none;
+    transition: background-color 0.3s ease-in;
+    overflow: hidden;
+}
+
+.destination-overlay:hover{ 
+    background-color: rgba(0, 67, 43, 0.3);
+}
+
+.home-history{
+    display: flex; 
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    width: 100%;
+    background-color: #137c55;
+    padding: 2rem;
+}
+
+footer a{
+    text-decoration: underline;
+    font-weight: bold;
 }
