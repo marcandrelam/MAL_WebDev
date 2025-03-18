@@ -16,6 +16,7 @@ body{
     margin:0; 
     font-family: 'Helvetica'; 
     background-color: antiquewhite;
+
 }
 
 body a{
@@ -30,12 +31,19 @@ h1{
 h2{
     font-size: 32px; 
     font-family: "CormorantGaramond", sans-serif;
+    font-weight: 500;
 }
 
 p{
     font-size: 24px; 
     font-family: "CormorantGaramond", sans-serif;
 }
+
+img{
+    width: 100%;
+    height: auto;
+}
+/*home page*/
 
 header{
     display:flex; 
@@ -79,7 +87,9 @@ header{
 
 .hero img {
     position: absolute;
-    width: 100%; 
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; 
     z-index: -1;
 }
 
@@ -114,8 +124,8 @@ header{
     width: 400px;
     height: 400px;
     object-fit: cover;
-    display: block;
     border-radius: 30px;
+    padding: 1rem;
 }
 
 .destination-item a{
@@ -128,6 +138,7 @@ header{
     width: 400px;
     height: 400px;
     border-radius: 30px;
+    padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -142,19 +153,113 @@ header{
     background-color: rgba(0, 67, 43, 0.3);
 }
 
-.home-history{
+.home-text{
     display: flex; 
+    flex-direction: column;
     text-align: center;
+    padding: 20px;
 }
 
 footer{
     text-align: center;
     width: 100%;
     background-color: #137c55;
+    color: antiquewhite;
     padding: 2rem;
 }
 
 footer a{
-    text-decoration: underline;
-    font-weight: bold;
+    text-decoration:underline;
+    color: antiquewhite;
+}
+
+button{
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    padding: .75rem; 
+    font-size: 20px;
+    font-family: 'CormorantGaramond', sans-serif;
+    background-color: #137c55;
+    color: antiquewhite;
+    cursor: pointer;
+}
+
+/* media queries*/
+@media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .menu {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+    }
+  
+    .hero {
+      font-size: 32px;
+      height: 65vh;
+    }
+  
+    .hero img {
+      height: 65vh;
+    }
+  
+    .hero-paragraph {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    h1 {
+      font-size: 40px;
+    }
+  
+    h2 {
+      font-size: 24px;
+    }
+  
+    p {
+      font-size: 18px;
+    }
+  
+    .destination-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .destination-item img,
+    .destination-overlay {
+      width: 250px;
+      height: 250px;
+    }
+  
+    button {
+      width: 100%;
+      font-size: 18px;
+    }
+  
+    footer {
+      padding: 1rem;
+    }
+  }
+
+/* destinations page */ 
+.destinations-header{
+    height: 150px;
+    position: relative; 
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10%;
+}
+/*pseudo element*/ 
+
+.destinations-header::after{
+    content:''; 
+    background-image: url(../img/botwtapestry.webp);
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    transform: skewY(-5deg);
 }
