@@ -11,6 +11,17 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.getElementById("hamburger");
+        hamburger.addEventListener("click", toggleMenu);
+      });
+
+      function toggleMenu() {
+        const navigation = document.getElementById("main-nav");
+        navigation.classList.toggle("show");
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -33,10 +44,21 @@
         </ul>
       </nav>
     </header>
-    <main><img src="../img/Map.webp" /></main>
+    <h1>Fortified Pumpkin</h1>
+    <img
+      style="padding: 2rem; background-color: #ffd9af"
+      src="../img/fortifiedpumpkin.jpg"
+    />
+    <p style="text-align: left; padding: 2rem">
+      Fortified Pumpkins are one of three foodstuffs favoured by the Sheikah
+      race, with the others being Swift Carrots and Mighty Bananas. They are
+      primarily and exclusively cultivated by the Sheikah farmer Olkin, who
+      sells 8 from his field in Kakariko Village. They can also be purchased
+      from the travelling merchant Cambo or dropped by defeated Hinoxes.
+    </p>
+
     <footer>
       <p>Website by Marc Andre Lam</p>
-      <a href="about.html"><p>About the Author</p></a>
     </footer>
   </body>
 </html>

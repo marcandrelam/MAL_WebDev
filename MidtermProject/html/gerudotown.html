@@ -11,6 +11,17 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.getElementById("hamburger");
+        hamburger.addEventListener("click", toggleMenu);
+      });
+
+      function toggleMenu() {
+        const navigation = document.getElementById("main-nav");
+        navigation.classList.toggle("show");
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -33,10 +44,28 @@
         </ul>
       </nav>
     </header>
-    <main><img src="../img/Map.webp" /></main>
+    <h1>Gerudo Town</h1>
+    <img
+      style="padding: 2rem; background-color: #ffffce"
+      src="../img/gerudotown.jpg"
+    />
+    <p style="text-align: left; padding: 2rem">
+      Located far off in the center of the Gerudo Desert, Gerudo Town is a large
+      vibrant community and home to the Gerudo people, who are all female. The
+      Gerudo are fiercely protective of their culture, and do not allow a male
+      (voe) into their town. Only females (vai) are allowed entry. The Daqo
+      Chisay Shrine resides right outside Gerudo Town's walls. Gerudo Town also
+      houses a Goddess Statue near the Southeast Gate.
+    </p>
+
+    <h2 style="text-decoration: underline">
+      <a href="fruit.html"
+        >Regional Food: Fresh Fruit from Lorn's Fruit Stand</a
+      >
+    </h2>
+    <p></p>
     <footer>
       <p>Website by Marc Andre Lam</p>
-      <a href="about.html"><p>About the Author</p></a>
     </footer>
   </body>
 </html>

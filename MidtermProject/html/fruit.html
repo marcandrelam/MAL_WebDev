@@ -11,6 +11,17 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.getElementById("hamburger");
+        hamburger.addEventListener("click", toggleMenu);
+      });
+
+      function toggleMenu() {
+        const navigation = document.getElementById("main-nav");
+        navigation.classList.toggle("show");
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -33,10 +44,19 @@
         </ul>
       </nav>
     </header>
-    <main><img src="../img/Map.webp" /></main>
+    <h1>Fresh Fruit from Lorn's Fruit Stand</h1>
+    <img
+      style="padding: 2rem; background-color: #ffffce"
+      src="../img/gerudotownfruit.webp"
+    />
+    <p style="text-align: left; padding: 2rem">
+      Lorn's Fruit Stand is a General Store located in Gerudo Town. It is
+      operated by Lorn and her daughter Dalia. The store sells voltfruit,
+      hydromelon, and hearty durian, refreshing and tasty fruits in the desert
+      heat.
+    </p>
     <footer>
       <p>Website by Marc Andre Lam</p>
-      <a href="about.html"><p>About the Author</p></a>
     </footer>
   </body>
 </html>

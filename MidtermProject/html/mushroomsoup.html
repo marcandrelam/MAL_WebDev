@@ -11,6 +11,17 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.getElementById("hamburger");
+        hamburger.addEventListener("click", toggleMenu);
+      });
+
+      function toggleMenu() {
+        const navigation = document.getElementById("main-nav");
+        navigation.classList.toggle("show");
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -33,10 +44,18 @@
         </ul>
       </nav>
     </header>
-    <main><img src="../img/Map.webp" /></main>
+    <h1>Cream of Mushroom Soup</h1>
+    <img
+      style="padding: 2rem; background-color: #137c55"
+      src="../img/mushroomsoup.png"
+    />
+    <p style="text-align: left; padding: 2rem">
+      A hearty and filling meal often crafted with foraged mushrooms from the
+      Korok Forest. Several variations of mushroom soup are eaten around Hyrule,
+      using ingredients such as endura carrots, hearty truffles, and herbs.
+    </p>
     <footer>
       <p>Website by Marc Andre Lam</p>
-      <a href="about.html"><p>About the Author</p></a>
     </footer>
   </body>
 </html>

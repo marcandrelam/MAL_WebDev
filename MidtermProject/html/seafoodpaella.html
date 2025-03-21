@@ -11,6 +11,17 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.getElementById("hamburger");
+        hamburger.addEventListener("click", toggleMenu);
+      });
+
+      function toggleMenu() {
+        const navigation = document.getElementById("main-nav");
+        navigation.classList.toggle("show");
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -33,10 +44,19 @@
         </ul>
       </nav>
     </header>
-    <main><img src="../img/Map.webp" /></main>
+    <h1>Seafood Paella</h1>
+    <img
+      style="padding: 2rem; background-color: #d3fefc"
+      src="../img/Seafood_Paella_-_TotK_icon.png"
+    />
+    <p style="text-align: left; padding: 2rem">
+      Seafood Paellas are made by Cooking a Hearty Blueshell Snail, Hylian Rice,
+      Goat Butter, Rock Salt, and either a Mighty Porgy or an Armored Porgy
+      together. These meals are considered top-shelf and are common in the
+      birthday celebrations of fishermen, especially those in Lurelin Village.
+    </p>
     <footer>
       <p>Website by Marc Andre Lam</p>
-      <a href="about.html"><p>About the Author</p></a>
     </footer>
   </body>
 </html>

@@ -11,6 +11,17 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.getElementById("hamburger");
+        hamburger.addEventListener("click", toggleMenu);
+      });
+
+      function toggleMenu() {
+        const navigation = document.getElementById("main-nav");
+        navigation.classList.toggle("show");
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -33,10 +44,27 @@
         </ul>
       </nav>
     </header>
-    <main><img src="../img/Map.webp" /></main>
+    <h1>Kakariko Village</h1>
+    <img
+      style="padding: 2rem; background-color: #ffd9af"
+      src="../img/kakarikovillage1.jpg"
+    />
+    <p style="text-align: left; padding: 2rem">
+      Kakariko Village is a settlement in the West Necluda region of Hyrule,
+      north of the Dueling Peaks. One hundred years ago, during the Great
+      Calamity, it avoided damage from the Guardian's assault. It contains
+      several houses, gardens, and a selection of stores, including High Spirits
+      Produce, a general store where travelers can purchase locally grown food
+      and supplies; Shuteye Inn, which allows travelers to rest and regenerate
+      Hearts; The Curious Quiver, a store that specializes in Arrows; and
+      Enchanted, a boutique that sells Armor.
+    </p>
+
+    <h2 style="text-decoration: underline">
+      <a href="pumpkin.html">Regional Food: Fortified Pumpkin</a>
+    </h2>
     <footer>
       <p>Website by Marc Andre Lam</p>
-      <a href="about.html"><p>About the Author</p></a>
     </footer>
   </body>
 </html>
