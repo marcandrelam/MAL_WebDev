@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Color and Text Randomizer</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <button>Color</button>
+    <div id="color-code">#FFFFFF</div>
+
+    <script>
+      const fontFamily = ["Arial", "Helvetica", "Times New Roman", "Impact"];
+
+      const hexColor = [
+        "#C0CAA9",
+        "#90A06B",
+        "#E6F5C3",
+        "#64753B",
+        "#3C4B19",
+        "#263309",
+      ];
+
+      function hexPicker() {
+        const hex = Math.floor(Math.random() * hexColor.length);
+        return hexColor[hex];
+      }
+
+      function fontPicker() {
+        const font = Math.floor(Math.random() * fontFamily.length);
+        return fontFamily[font];
+      }
+
+      function changeCombo() {
+        const chosenColor = hexPicker();
+        const chosenFont = fontPicker();
+
+        document.body.style.backgroundColor = chosenColor;
+
+        const colorCodeElement = document.getElementById("color-code");
+        colorCodeElement.textContent = chosenColor;
+        colorCodeElement.style.fontFamily = chosenFont;
+      }
+
+      document.querySelector("button").addEventListener("click", changeCombo);
+    </script>
+  </body>
+</html>

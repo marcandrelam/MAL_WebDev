@@ -59,7 +59,7 @@ header a{
 
 .menu li a:hover{
     color: yellow; 
-    background-color: rgba(0, 255, 0, .3);
+    background-image: url(../img/lebron.png);
 }
 
 .container{
