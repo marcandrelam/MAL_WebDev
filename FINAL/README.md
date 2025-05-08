@@ -14,4 +14,4 @@ Uses HTML to structure site.
 Things to do for 5/8:
 -adding pages for entries
 -updating images & possibly fonts
--smooth scroll to make animiations feel less clunky
+-smooth scroll to make animations feel less clunky
